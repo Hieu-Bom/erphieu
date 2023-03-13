@@ -1,0 +1,79 @@
+<odoo>
+	<data>
+		<record id="view_form_to_vuong" model="ir.ui.view">
+			<field name="name">to_vuong form</field>
+			<field name="model">to_vuong.to_vuong</field>
+			<field name="arch" type="xml">
+				<form>
+					<header>
+					</header>
+					<sheet>
+						<group name="group_v1">
+							<group name="group_left">
+								<field name="section" />
+								<field name="bl_no" />
+								<field name="material_tool" />
+								<field name="exporter" />
+								<field name="incoterms" />
+								<field name="type" />
+								<field name="country_id" />
+								<field name="date" />
+								<field name="freight" />
+								<field name="handling_charge" />
+								<field name="customs_fee" />
+								<field name="local_logistic_fee" />
+							</group>
+							<group name="group_right">
+								<field name="etc" />
+								<field name="total" />
+								<field name="vat_Of_surcharge" />
+								<field name="total_included_vat" />
+								<field name="currency_id" />
+								<field name="weight" />
+								<field name="cbm_cont" />
+								<field name="forwarder" />
+								<field name="cd_no" />
+								<field name="cd_date" />
+								<field name="cd_fwd" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="to_vuong.list">
+			<field name="name">to_vuong list</field>
+			<field name="model">to_vuong.to_vuong</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="section" />
+					<field name="bl_no" />
+					<field name="material_tool" />
+					<field name="exporter" />
+					<field name="incoterms" />
+					<field name="type" />
+					<field name="country_id" />
+					<field name="date" />
+					<field name="freight" />
+					<field name="handling_charge" />
+					<field name="customs_fee" />
+					<field name="local_logistic_fee" />
+					<field name="etc" />
+					<field name="total" />
+					<field name="vat_Of_surcharge" />
+					<field name="total_included_vat" />
+					<field name="currency_id" />
+					<field name="weight" />
+					<field name="cbm_cont" />
+					<field name="forwarder" />
+					<field name="cd_no" />
+					<field name="cd_date" />
+					<field name="cd_fwd" />
+				</tree>
+			</field>
+		</record>
+
+
+	</data>
+</odoo>

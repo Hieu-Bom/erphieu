@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+		<record id="view_form_to_vuong2" model="ir.ui.view">
+			<field name="name">to_vuong form2</field>
+			<field name="model">to_vuong.to_vuong2</field>
+			<field name="arch" type="xml">
+				<form>
+					<header>
+					</header>
+					<sheet>
+						<group name="group_v1">
+							<group name="group_left">
+								<field name="bill_fee" />
+								<field name="customs_fee" />
+								<field name="local_charge" />
+								<field name="over_time" />
+								<field name="basic_fee" />
+								<field name="handlin" />
+							</group>
+							<group name="group_right">
+								<field name="red_inv" />
+								<field name="port_charge" />
+								<field name="cd_fwd_fee" />
+								<field name="note" />
+								<field name="sum" />
+								<field name="compare" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="to_vuong.list2">
+			<field name="name">to_vuong list2</field>
+			<field name="model">to_vuong.to_vuong2</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="bill_fee" />
+					<field name="customs_fee" />
+					<field name="local_charge" />
+					<field name="over_time" />
+					<field name="basic_fee" />
+					<field name="handlin" />
+					<field name="red_inv" />
+					<field name="port_charge" />
+					<field name="cd_fwd_fee" />
+					<field name="note" />
+					<field name="sum" />
+					<field name="compare" />
+				</tree>
+			</field>
+		</record>
+	</data>
+</odoo>

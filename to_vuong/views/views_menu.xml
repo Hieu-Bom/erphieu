@@ -1,0 +1,21 @@
+<odoo>
+	<record model="ir.actions.act_window"
+		id="to_vuong.action_window">
+		<field name="name">To Do View One</field>
+		<field name="res_model">to_vuong.to_vuong</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record model="ir.actions.act_window"
+		id="to_vuong.action_window2">
+		<field name="name">To Do View Two</field>
+		<field name="res_model">to_vuong.to_vuong2</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	menu categories actions
+	<menuitem name="To Do One" id="menu_1"
+		action="to_vuong.action_window" />
+	<menuitem name="To Do Two" id="menu_2" parent="menu_1"
+		action="to_vuong.action_window2" />
+</odoo>
